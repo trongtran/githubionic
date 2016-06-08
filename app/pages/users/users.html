@@ -6,7 +6,7 @@
 </ion-navbar>
 
 
-<ion-content padding class="getting-started">
+<ion-content padding>
   <ion-searchbar (input)="search($event)"></ion-searchbar>
   <ion-list>
     <button ion-item *ngFor="let user of users" (click)="goToDetails($event, user.login)">
