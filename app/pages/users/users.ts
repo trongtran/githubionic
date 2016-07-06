@@ -1,4 +1,5 @@
-import {Page, NavController} from 'ionic-angular';
+import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
 
 // Import User's Details Page
 import {UserDetailsPage} from '../user-details/user-details';
@@ -8,13 +9,14 @@ import {User} from '../../models/user';
 
 // Import GithubUsers provider
 import {GithubUsers} from '../../providers/github-users/github-users';
+
 /*
   Generated class for the UsersPage page.
 
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 */
-@Page({
+@Component({
   templateUrl: 'build/pages/users/users.html',
 })
 export class UsersPage {
@@ -42,7 +44,7 @@ export class UsersPage {
   // Search for user's from github  
   // Handle input event from search bar
   search(searchTerm) {
-    let term = searchTerm.value;
+    let term = searchTerm.target.value;
 
     // We will only perform the search if we have 3 or more characters
     if (term.trim() == '' || term.trim().length < 3) {

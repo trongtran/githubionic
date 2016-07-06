@@ -1,5 +1,5 @@
-import {ViewChild} from '@angular/core';
-import {App, Platform, MenuController, Nav} from 'ionic-angular';
+import {Component, ViewChild} from '@angular/core';
+import {ionicBootstrap, Platform, MenuController, Nav} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
 
 // Comment out impor of pages we have deleted from the pages folder
@@ -12,18 +12,16 @@ import {GithubUsers} from './providers/github-users/github-users';
 import {UsersPage} from './pages/users/users';
 import {ReposPage} from './pages/repos/repos';
 import {OrganizationsPage} from './pages/organizations/organizations'
- 
 
-@App({
+
+@Component({
   templateUrl: 'build/app.html',
-  config: {}, // http://ionicframework.com/docs/v2/api/config/Config/
   providers: [GithubUsers]
 })
 class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   // make UsersPage the root (or first) page
-  // rootPage: any = UsersPage;
   rootPage: any = UsersPage;
   pages: Array<{title: string, component: any}>;
 
@@ -58,3 +56,5 @@ class MyApp {
     this.nav.setRoot(page.component);
   }
 }
+
+ionicBootstrap(MyApp);

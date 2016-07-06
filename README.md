@@ -29,9 +29,9 @@ cd into the githubionic folder run npm install
 ```bash
 $ npm install
 ```
-install es6-shim typings
+install typings
 ```bash
-$ typings install dt~es6-shim --save --global
+$ typings install
 ```
 
 Serve the app
