@@ -7,7 +7,6 @@ import {User} from '../../models/user'
 
 /*
   Generated class for the GithubUsers provider.
-
   See https://angular.io/docs/ts/latest/guide/dependency-injection.html
   for more info on providers and Angular 2 DI.
 */
