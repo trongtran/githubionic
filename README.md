@@ -1,5 +1,5 @@
 ## Github Ionic
-This is a sample Ionic 2 App that consumes the github API
+This is a sample Ionic 2 App that consumes the github API. To follow along on how it was built please [read  through this article](https://scotch.io/tutorials/build-a-mobile-app-with-angular-2-and-ionic-2)
 
 ## Run the app
 Make sure you have [nodejs](https://nodejs.org/en/) installed.
