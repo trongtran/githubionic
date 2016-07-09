@@ -5,7 +5,7 @@ import { NavController, NavParams } from 'ionic-angular';
 import {GithubUsers} from '../../providers/github-users/github-users';
 
 // Import the User model
-import {User} from '../../models/user';
+import User from '../../models/user';
 
 /*
   Generated class for the UserDetailsPage page.
@@ -17,7 +17,7 @@ import {User} from '../../models/user';
   templateUrl: 'build/pages/user-details/user-details.html',
 })
 export class UserDetailsPage {
-  user: User = new User;
+  user: User;
   login: string;
 
   constructor(public nav: NavController, navParams: NavParams, githubUsers: GithubUsers) {
@@ -26,6 +26,6 @@ export class UserDetailsPage {
 
     // Get the user details and log
     githubUsers.loadDetails(this.login)
-      .then( user => this.user = user)
+      .then(user => this.user = user)
   }
 }

@@ -5,7 +5,7 @@ import { NavController } from 'ionic-angular';
 import {UserDetailsPage} from '../user-details/user-details';
 
 // Import User model
-import {User} from '../../models/user';
+import User from '../../models/user';
 
 // Import GithubUsers provider
 import {GithubUsers} from '../../providers/github-users/github-users';

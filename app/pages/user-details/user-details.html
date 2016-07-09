@@ -13,7 +13,7 @@
 
 <ion-content padding>
   <h3>User Details view page</h3>
-    <ion-list>
+    <ion-list *ngIf="user">
       <ion-item>
         <ion-label>Followers</ion-label>
         <ion-badge item-right>{{user.followers}}</ion-badge>
