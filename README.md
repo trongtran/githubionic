@@ -1,11 +1,3 @@
-## Note
-This branch has edits and updates from the comments given from [the article](https://scotch.io/tutorials/build-a-mobile-app-with-angular-2-and-ionic-2)
-
-### The changes include
-* Using and Interface instead of a class for the user model
-* Reduce model properties to match only the values that we use for the sample app
-* Using `do` and `toPromise` Rx/Js operator in the github-users service
-
 ## Github Ionic
 This is a sample Ionic 2 App that consumes the github API. To follow along on how it was built please [read  through this article](https://scotch.io/tutorials/build-a-mobile-app-with-angular-2-and-ionic-2)
 
